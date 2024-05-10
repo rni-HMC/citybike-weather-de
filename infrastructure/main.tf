@@ -13,7 +13,7 @@ provider "aws" {
   region = "us-west-2"
 }
 resource "aws_instance" "app_server" {
-  ami                    = "ami-09c3a3c2cf6003f6c"
+  ami                    = "ami-023e152801ee4846a"
   instance_type          = "t2.micro"
   key_name               = "aws_key"
   vpc_security_group_ids = [aws_security_group.main.id]
